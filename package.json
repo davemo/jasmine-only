@@ -1,0 +1,32 @@
+{
+  "name": "jasmine-only",
+  "version": "0.0.1",
+  "description": "Exclusive spec helpers for jasmines `describe` and `it`",
+  "homepage": "https://github.com/davemo/jasmine-only",
+  "author": {
+    "name": "David Mosher",
+    "company": "Test Double, LLC"
+  },
+  "dependencies": {
+    "lineman": "~0.11.2"
+  },
+  "keywords" : [
+    "jasmine",
+    "bdd"
+  ],
+  "bugs" : {
+    "web" : "https://github.com/davemo/jasmine-only/issues"
+  },
+  "repositories" : [
+    {
+      "type" : "git",
+      "url"  : "https://github.com/davemo/jasmine-only.git"
+    }
+  ],
+  "licenses" : [
+    {
+      "name" : "Apache License 2.0",
+      "url"  : "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
