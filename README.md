@@ -1,6 +1,6 @@
 # jasmine-only
 
-[![Build Status](https://secure.travis-ci.org/davemo/jasmine-only.png)](http://travis-ci.org/davemo/jasmine-only)
+[![Build Status](https://travis-ci.org/davemo/jasmine-only.png?branch=master)](https://travis-ci.org/davemo/jasmine-only)
 
 jasmine-only is a standalone plugin that you can load _after_ jasmine that adds [mocha-style](http://visionmedia.github.io/mocha/#exclusive-tests) exclusivity helpers `describe.only` and `it.only` to [jasmine 1.3.1](https://github.com/pivotal/jasmine/releases/tag/v1.3.1)
 
