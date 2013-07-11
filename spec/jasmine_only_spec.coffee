@@ -1,45 +1,83 @@
 describe "jasmine-only", ->
 
-  it "should run only describe.only suites when at least one registered", ->
-    normal    = jasmine.createSpy('normal spec')
-    exclusive = jasmine.createSpy('exclusive spec')
+  describe "something", ->
+    it "does things", ->
+      expect(2).toEqual(2)
 
-    describe "normal", ->
-      it "shouldnt execute this 1", normal
-      it "shouldnt execute this 2", normal
+  describe.only "should only do things sanely", ->
+    it "should only run this", ->
+      expect(true).toBe(true)
 
-    describe.only "exclusive", ->
-      it "executes this 1", exclusive
-      it "executes this 2", exclusive
 
-      describe "nested exclusive", ->
-        it "executes this 3", exclusive
 
-    describe "normal 2", ->
-      it "shouldnt execute this 3", normal
+    # normal    = jasmine.createSpy('normal spec')
+    # exclusive = jasmine.createSpy('exclusive spec')
 
-    expect(normal).not.toHaveBeenCalled()
-    expect(exclusive).toHaveBeenCalled()
-    expect(exclusive.callCount).toBe(3)
+    # describe "normal", ->
+    #   it "shouldnt execute this 1", normal
+    #   it "shouldnt execute this 2", normal
 
-  it "should run only it.only suites when at least one registered", ->
-    normal    = jasmine.createSpy('normal spec')
-    exclusive = jasmine.createSpy('exclusive spec')
+    # describe.only "exclusive", ->
+    #   it "executes this 1", exclusive
+    #   it "executes this 2", exclusive
 
-    describe "normal", ->
-      it "shouldnt execute this 1", normal
-      it.only "executes this 1", exclusive
+    #   describe "nested exclusive", ->
+    #     it "executes this 3", exclusive
 
-    describe.only "exclusive", ->
-      it "shouldnt execute this 2", normal
-      it.only "executes this 2", exclusive
+    # describe "normal 2", ->
+    #   it "shouldnt execute this 3", normal
 
-      describe "nested exclusive", ->
-        it.only "executes this 3", exclusive
+    # expect(normal).not.toHaveBeenCalled()
+    # expect(exclusive).toHaveBeenCalled()
+    # expect(exclusive.callCount).toBe(3)
 
-    describe.only "normal 2", ->
-      it "shouldnt execute this 3", normal
 
-    expect(normal).not.toHaveBeenCalled()
-    expect(exclusive).toHaveBeenCalled()
-    expect(exclusive.callCount).toBe(3)
+  # describe "normal", ->
+  #   it "should not execute this 1", ->
+  #     normal()
+  #   expect(normal).toHaveBeenCalled()
+  # expect(exclusive).toHaveBeenCalled()
+  # expect(exclusive.callCount).toBe(3)
+
+  # describe "should run only describe.only suites when at least one registered", ->
+
+
+  #   describe "normal", ->
+  #     it "shouldnt execute this 1", normal
+  #     it "shouldnt execute this 2", normal
+
+  #   describe.only "exclusive", ->
+  #     it "executes this 1", exclusive
+  #     it "executes this 2", exclusive
+
+  #     describe "nested exclusive", ->
+  #       it "executes this 3", exclusive
+
+  #   describe "normal 2", ->
+  #     it "shouldnt execute this 3", normal
+
+  #   expect(normal).not.toHaveBeenCalled()
+  #   expect(exclusive).toHaveBeenCalled()
+  #   expect(exclusive.callCount).toBe(3)
+
+  # describe "should run only it.only suites when at least one registered", ->
+  #   normal    = jasmine.createSpy('normal spec')
+  #   exclusive = jasmine.createSpy('exclusive spec')
+
+  #   describe "normal", ->
+  #     it "shouldnt execute this 1", normal
+  #     it.only "executes this 1", exclusive
+
+  #   describe.only "exclusive", ->
+  #     it "shouldnt execute this 2", normal
+  #     it.only "executes this 2", exclusive
+
+  #     describe "nested exclusive", ->
+  #       it.only "executes this 3", exclusive
+
+  #   describe.only "normal 2", ->
+  #     it "shouldnt execute this 3", normal
+
+  #   expect(normal).not.toHaveBeenCalled()
+  #   expect(exclusive).toHaveBeenCalled()
+  #   expect(exclusive.callCount).toBe(3)
