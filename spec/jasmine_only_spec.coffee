@@ -9,7 +9,6 @@ describe "jasmine-only", ->
       expect(true).toBe(true)
 
 
-
     # normal    = jasmine.createSpy('normal spec')
     # exclusive = jasmine.createSpy('exclusive spec')
 

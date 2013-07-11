@@ -57,7 +57,7 @@
   root.describe.only = (description, specDefinitions) ->
     env.describe.only(description, specDefinitions)
 
-  root.it.only = (desc, func) ->
+  root.it.only = (description, func) ->
     env.it.only(description, func)
 
   # constructor duck punching, <3 coffeescript
