@@ -1,14 +1,14 @@
 {
   "name": "jasmine-only",
   "version": "0.0.1",
-  "description": "Exclusive spec helpers for jasmines `describe` and `it`",
+  "description": "Exclusivity spec helpers for jasmine: `describe.only` and `it.only`",
   "homepage": "https://github.com/davemo/jasmine-only",
   "author": {
     "name": "David Mosher",
     "company": "Test Double, LLC"
   },
   "dependencies": {
-    "lineman": "~0.11.2"
+    "lineman": "~0.11.3"
   },
   "keywords" : [
     "jasmine",
