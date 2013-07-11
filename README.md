@@ -41,6 +41,6 @@ describe "jasmine-only", ->
 
 # thanks / prior art
 
-Much of this work is based on a [pull request](https://github.com/pivotal/jasmine/pull/309) that [@airporty](https://github.com/airportyh) issued.
+Much of this work is based on a [pull request](https://github.com/pivotal/jasmine/pull/309) that [@airportyh](https://github.com/airportyh) issued.
 
 
