@@ -4,7 +4,7 @@
 
 jasmine-only is a standalone plugin that you can load _after_ jasmine that adds [mocha-style](http://visionmedia.github.io/mocha/#exclusive-tests) exclusivity helpers `describe.only` and `it.only` to [jasmine 1.3.1](https://github.com/pivotal/jasmine/releases/tag/v1.3.1)
 
-**[Download the latest version here](https://github.com/davemo/jasmine-only/releases/0.0.1/jasmine-only.js)**.
+**[Download the latest version here](https://github.com/davemo/jasmine-only/releases/download/0.0.1/jasmine-only.js)**.
 
 # examples
 
