@@ -43,8 +43,9 @@ describe "jasmine-only", ->
 
 jasmine-only has the following aliases for exclusive spec helpers
 
-`describe.only` -> `ddescribe`
-`it.only`       -> `iit`
+`describe.only` can be written as `ddescribe`
+
+`it.only` can be written as `iit`
 
 # thanks / prior art
 
