@@ -1,24 +1,28 @@
 describe "jasmine-only", ->
 
-  describe "describe.only and it.only", ->
+  describe "exclusive spec helpers", ->
 
     normal    = jasmine.createSpy('normal spec')
     exclusive = jasmine.createSpy('exclusive spec')
 
-    describe "normal", ->
+    describe "it.only", ->
       it "shouldnt execute this 1", normal
-      it.only "it only executes this 1", exclusive
+      it.only "it only executes this using `it.only`", exclusive
 
-    describe.only "exclusive", ->
+    describe.only "describe.only", ->
       it "shouldnt execute this 2", normal
-      it.only "it only executes this 2", exclusive
+      it.only "it only executes this using `it.only` within `describe.only`", exclusive
 
-      describe "nested exclusive", ->
-        it.only "it only executes this 3", ->
-          exclusive()
+      describe "block assertions", ->
+        it.only "does not call normal blocks", ->
           expect(normal).not.toHaveBeenCalled()
-          expect(exclusive).toHaveBeenCalled()
-          expect(exclusive.callCount).toBe(3)
+        it.only "only calls exclusive blocks", ->
+          expect(exclusive.callCount).toBe(2)
 
-    describe.only "normal 2", ->
+      describe "aliases", ->
+        it.only "provides aliases `ddescribe` and `iit`", ->
+          expect(ddescribe).toEqual(describe.only)
+          expect(iit).toEqual(it.only)
+
+    describe.only "does not run or blow up using `describe.only`", ->
       it "shouldnt execute this 3", normal

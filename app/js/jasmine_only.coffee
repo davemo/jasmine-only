@@ -60,6 +60,11 @@
   root.it.only = (description, func) ->
     env.it.only(description, func)
 
+  # aliases
+
+  root.iit       = root.it.only
+  root.ddescribe = root.describe.only
+
   # constructor duck punching, <3 coffeescript
 
   class jasmine.Spec extends jasmine.Spec
