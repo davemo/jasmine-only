@@ -4,13 +4,13 @@
 
 jasmine-only is a standalone plugin that you can load _after_ jasmine that adds [mocha-style](http://visionmedia.github.io/mocha/#exclusive-tests) exclusivity helpers `describe.only` and `it.only` to [jasmine 1.3.1](https://github.com/pivotal/jasmine/releases/tag/v1.3.1)
 
-**[Download the latest version here](https://github.com/davemo/jasmine-only/releases/download/0.0.1/jasmine-only.js)**.
+**[Download the latest version here](https://github.com/davemo/jasmine-only/releases/download/0.1.0/jasmine-only.js)**.
 
 # examples
 
 > The exclusivity feature allows you to run only the specified suite or test-case by appending .only() to the call
 
-the simplest example is jasmine-only's unit test:
+here is a simple example:
 
 ```coffeescript
 describe "jasmine-only", ->
@@ -38,6 +38,13 @@ describe "jasmine-only", ->
     describe.only "normal 2", ->
       it "shouldnt execute this 3", normal
 ```
+
+# aliases
+
+jasmine-only has the following aliases for exclusive spec helpers
+
+`describe.only` -> `ddescribe`
+`it.only`       -> `iit`
 
 # thanks / prior art
 
