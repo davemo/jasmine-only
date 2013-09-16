@@ -7,26 +7,28 @@
     "name": "David Mosher",
     "company": "Test Double, LLC"
   },
+  "main": "main.js",
   "dependencies": {
-    "lineman": "~0.11.3"
+    "coffee-script": "~ 1.6.3"
   },
-  "keywords" : [
+  "devDependencies": {
+    "lineman": ">=0.11.0"
+  },
+  "keywords": [
     "jasmine",
     "bdd"
   ],
-  "bugs" : {
-    "web" : "https://github.com/davemo/jasmine-only/issues"
+  "bugs": {
+    "web": "https://github.com/davemo/jasmine-only/issues"
   },
-  "repositories" : [
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davemo/jasmine-only.git"
+  },
+  "licenses": [
     {
-      "type" : "git",
-      "url"  : "https://github.com/davemo/jasmine-only.git"
-    }
-  ],
-  "licenses" : [
-    {
-      "name" : "Apache License 2.0",
-      "url"  : "http://www.apache.org/licenses/LICENSE-2.0"
+      "name": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ]
 }
