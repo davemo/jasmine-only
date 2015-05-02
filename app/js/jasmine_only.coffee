@@ -1,7 +1,7 @@
 ((jasmine) ->
 
   # the window
-  root = @
+  root = `(1, eval)('this')`
 
   # jasmines environment
   env  = jasmine.getEnv()
