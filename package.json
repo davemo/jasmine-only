@@ -1,6 +1,6 @@
 {
   "name": "jasmine-only",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Exclusivity spec helpers for jasmine: `describe.only` and `it.only`",
   "homepage": "https://github.com/davemo/jasmine-only",
   "author": {
